@@ -23,10 +23,13 @@ namespace Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(txta.Text);
-            double b = double.Parse(txtb.Text);
-            double c = a + b;
-            txtkq.Text = c.ToString();
+            if (txta.Text != String.Empty && txtb.Text != String.Empty)
+            {
+                double a = double.Parse(txta.Text);
+                double b = double.Parse(txtb.Text);
+                double c = a + b;
+                txtkq.Text = c.ToString();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
