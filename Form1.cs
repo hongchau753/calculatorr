@@ -20,5 +20,13 @@ namespace Calculator
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(txta.Text);
+            double b = double.Parse(txtb.Text);
+            double c = a + b;
+            txtkq.Text = c.ToString();
+        }
     }
 }
