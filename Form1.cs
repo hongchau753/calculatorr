@@ -23,7 +23,7 @@ namespace Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txta.Text != String.Empty && txtb.Text != String.Empty)
+            if (txta.Text != String.Empty )
             {
                 double a = double.Parse(txta.Text);
                 double b = double.Parse(txtb.Text);
